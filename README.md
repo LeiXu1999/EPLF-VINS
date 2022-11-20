@@ -5,16 +5,15 @@ EPLF-VINS is a real-time SLAM framework with efficient point-line flow features.
 
 The open-source version of our algorithm is being prepared and will be open-sourced soon.
 
-Authors:Lei Xu, Hesheng Yin, Tong Shi, Jiang Di, Bo Huang from the HIT Industrial Research Institute of Robotics and Intelligent Equipment.
+Authors: Lei Xu, Hesheng Yin, Tong Shi, Jiang Di, Bo Huang from the HIT Industrial Research Institute of Robotics and Intelligent Equipment.
 
-Videos: [realRobot_Youtube](https://youtu.be/GCeYeh0P-VE)
 
 ## 1.Prerequisites
 1.1 Our testing hardware configuration is a 3.6 GHz Core AMD Ryzen 5-3600 CPU and 16 GB memory desktop PC.
 
 1.2 The algorithms are run on Ubuntu 18.04 with OpenCV 3.4.16 and Ceres solver 1.14.0.
 
-1.3 **Note that** : 
+<!--1.3 **Note that** : OpenCV requires library functions for the relevant library functions for line feature extraction (EDLines) such as OpenCV 3.4.16.-->
 ## 2.Build
 ``` shell
 cd ~/catkin_ws/src
@@ -47,11 +46,29 @@ rosbag play your_kasitvio_path/circle.bag
 
 ## 4.Deployed on your device
 
+
 ROS topics for cameras and IMUs are required to run the entire system. 
 
-The config.yaml file needs to be modified before running which is including necessary parameters such as camera internal parameters, camera-imu extrinsic parameters, and IMU internal parameters.
+Videos: [realRobot_Youtube](https://youtu.be/GCeYeh0P-VE)
 
 
+![](image/real.png)
+
+The config.yaml file needs to be modified before running which is including necessary parameters such as camera topic name, imu topic name, camera internal parameters, camera-imu extrinsic parameters, and IMU internal parameters.
+
+``` shell
+*launch your sensor_ros_package*
+
+*change your robot parameters*
+cd ~/catkin_ws/src
+gedit ../config/realrobot.yaml
+
+*launch EPLF-VINS*
+source devel/setup.bash
+roslaunch lfvins_estimator real.launch
+```
+
+You can contact me for deployment issues.
 ## 5.Acknowledgements
 Thanks to the open sources of [PL-VINS](https://github.com/cnqiangfu/PL-VINS) and [VINS-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono), it is possible to build our algorithm quickly within the VINS system.
 
