@@ -17,7 +17,7 @@ Authors: Lei Xu, Hesheng Yin, Tong Shi, Jiang Di, Bo Huang from the HIT Industri
 ## 2.Build
 ``` shell
 cd ~/catkin_ws/src
-git clone https://
+git clone https://github.com/LeiXu1999/EPLF-VINS.git
 cd ../
 catkin_make
 source ~/catkin_make/devel/setup.bash
