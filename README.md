@@ -28,7 +28,7 @@ We provide guidelines for running on the dataset including [EuRoC](https://proje
 EuRoC:
 ``` shell
 roslaunch lfvins_estimator euroc.launch
-rosbag play your_euroc_path/MH_01.bag
+rosbag play your_euroc_path/MH_01_easy.bag
 ```
 
 TUM VI:
