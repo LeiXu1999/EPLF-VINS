@@ -3,7 +3,7 @@
 
 EPLF-VINS is a real-time SLAM framework with efficient point-line flow features. Our work primarily focuses on improving the speed of detection and tracking of line features.
 
-The open-source version of our algorithm is being prepared and will be open-sourced soon.
+**The open-source version of our algorithm is being prepared and will be open-sourced soon.**
 
 Authors: Lei Xu, Hesheng Yin, Tong Shi, Jiang Di, Bo Huang from the HIT Industrial Research Institute of Robotics and Intelligent Equipment.
 
