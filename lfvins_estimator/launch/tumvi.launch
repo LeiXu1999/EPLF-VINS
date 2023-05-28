@@ -1,0 +1,20 @@
+<launch>
+    <arg name="config_path" default = "$(find lf_feature_tracker)/../config/tum_vio.yaml" />
+    <arg name="vins_path" default = "$(find lf_feature_tracker)/../config/../" />
+
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find lfvins_estimator)/../config/vins_rviz_config.rviz" />
+
+    <node name="lf_feature_tracker" pkg="lf_feature_tracker" type="feature_tracker" output="log">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="vins_folder" type="string" value="$(arg vins_path)" />
+    </node>
+
+    <node name="lf_linefeature_tracker" pkg="linefeature_tracker" type="linefeature_tracker" output="log">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="vins_folder" type="string" value="$(arg vins_path)" />
+    </node>
+
+    <node name="image_node_b" pkg="image_node_b" type="image_node_b" output="log">
+    </node>
+</launch>
+
