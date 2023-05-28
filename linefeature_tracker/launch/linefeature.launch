@@ -1,0 +1,13 @@
+<launch>
+    <arg name="config_path" default = "$(find linefeature_tracker)/launch/linefeature.yaml" />
+    <arg name="vins_path" default = "$(find linefeature_tracker)/../config/../" />
+
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find linefeature_tracker)/rviz/linefeature_tracker.rviz" />
+
+    <node name="linefeature_tracker" pkg="linefeature_tracker" type="linefeature_tracker" output="log">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+        <param name="vins_folder" type="string" value="$(arg vins_path)" />
+    </node>
+
+
+</launch>
