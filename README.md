@@ -51,7 +51,7 @@ rosbag play your_kasitvio_path/circle.bag
 
 ROS topics for cameras and IMUs are required to run the entire system. 
 
-Videos: [realRobot_Youtube](https://youtu.be/GCeYeh0P-VE)[BiBi](https://www.bilibili.com/video/BV1ig411r7F5/)
+Videos: [realRobot_Youtube](https://youtu.be/GCeYeh0P-VE), [BiBi_link](https://www.bilibili.com/video/BV1ig411r7F5/)
 
 
 ![](image/real.png)
