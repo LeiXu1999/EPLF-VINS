@@ -104,7 +104,7 @@ PL-VINS:
 	bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
-## 6.Licence
+## 6.License
 
 The source code is released under GPLv3 license.
 We are still working on improving the code reliability. 
@@ -113,5 +113,5 @@ For any technical issues, please contact Lei Xu <xulei3shi@163.com>.
 
 Thank Tong Shi (哈尔滨工业大学威海校区本科毕业生) for helping me code this system. He makes a huge contribution in this work. A more readable version can be found at his GITHUB [link]().
 
-For commercial inquiries, please contact Bo Huang <18606301906@163.com>.
+For commercial inquiries, please contact Professor-Bo Huang <18606301906@163.com>.
 
