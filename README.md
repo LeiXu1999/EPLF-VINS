@@ -7,6 +7,8 @@ EPLF-VINS is a real-time SLAM framework with efficient point-line flow features.
 
 **2023/5/28 The open source version is released.**
 
+**2024/6/1 Update Readme.**
+
 Authors: Lei Xu, Hesheng Yin, Tong Shi, Jiang Di, Bo Huang from the HIT Industrial Research Institute of Robotics and Intelligent Equipment.
 
 
@@ -15,7 +17,7 @@ Authors: Lei Xu, Hesheng Yin, Tong Shi, Jiang Di, Bo Huang from the HIT Industri
 
 1.2 The algorithms are run on Ubuntu 18.04 with OpenCV 3.4.16 and Ceres solver 1.14.0.
 
-<!--1.3 **Note that** : OpenCV(with opencv_contrib) requires library functions for the relevant library functions for line feature extraction (EDLines) such as OpenCV 3.4.16.-->
+1.3 **Note that** : OpenCV(with opencv_contrib) requires library functions for the relevant library functions for line feature extraction (EDLines) such as OpenCV 3.4.16.
 
 ## 2.Build
 ``` shell
